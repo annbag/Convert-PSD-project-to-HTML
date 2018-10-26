@@ -14,9 +14,18 @@ section {
 	width: 1280px;
 	height: 800px;
 	background-image: url(/images/bg.jpg);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 }
 div.blur {
@@ -24,7 +33,8 @@ div.blur {
 	width: 820px;
 	height: 510px;
 	background-image: url(/images/bg.jpg);
-	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	        filter: blur(5px);
 	background-position: center center;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -35,8 +45,15 @@ div.content {
 	width: 820px;
 	height: 510px;
 	z-index: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 div.content h1 {
 	font-family: 'Exo 2', sans-serif;
