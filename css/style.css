@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	color: #fff;
 	/*font-family: 'Exo 2', sans-serif;*/
 	max-width: 1280px;
 	margin: 0 auto;
@@ -14,9 +15,12 @@ section {
 	width: 1280px;
 	height: 800px;
 	background-image: url(/images/bg.jpg);
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
 	position: relative;
 }
 div.blur {
@@ -24,7 +28,7 @@ div.blur {
 	width: 820px;
 	height: 510px;
 	background-image: url(/images/bg.jpg);
-	filter: blur(5px);
+	filter: blur(3px);
 	background-position: center center;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -35,14 +39,72 @@ div.content {
 	width: 820px;
 	height: 510px;
 	z-index: 1;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 }
 div.content h1 {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 50px;
-	padding: 35px 0;
-	color: #fff;
+	padding: 25px 0;
 	text-align: center;
 	text-transform: uppercase;
+}
+div.icons {
+	text-align: center;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 0 1px 1px 0px rgba(255, 255, 255, 0.3);
+}
+div.main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+div.text {
+	flex-basis: 50%;
+	padding: 20px 10px 40px 30px;
+}
+div.text p {
+	padding-top: 15px;
+	font-weight: 700;
+	font-size: 20.5px;
+	line-height: 30px;
+}
+div.text p ~ p {
+	padding-top: 30px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+div.text p ~ p span {
+	font-weight: 900;
+}
+div.form {
+	padding: 20px 30px 0px 10px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+div.form input, div.form select {
+	height: 40px;
+	font-size: 12px;
+	line-height: 26px;
+	padding-left: 10px;
+	margin: 15px 0 20px;
+}
+div.form div.approval {
+	display: flex;
+}
+div.form div.approval input {
+	height: 16px;
+	width:  16px;
+	margin: 0;
+	display: inline;
+}
+div.form p {
+	font-size: 10px;
+	line-height: 14px;
 }
