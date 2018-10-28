@@ -10,7 +10,7 @@ body {
 	max-width: 1280px;
 	margin: 0 auto;
 }
-section {
+section.mainView {
 	width: 1280px;
 	height: 800px;
 	background-image: url(/images/bg.jpg);
@@ -27,6 +27,9 @@ section {
 	    -webkit-align-items: center;
 	        align-items: center;
 	position: relative;
+}
+section.mainView.inactive {
+	display: none;
 }
 div.blur {
 	position: absolute;
@@ -152,7 +155,7 @@ form div.approval p {
 	font-size: 10px;
 	line-height: 14px;
 }
-input#register-btn {
+input#register-btn, input#letsGo {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -160,6 +163,7 @@ input#register-btn {
 	height: 55px;
 	width: 100%;
 	margin: 0;
+	padding: 0;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-size: 21px;
@@ -169,3 +173,57 @@ input#register-btn {
 	border: none;
 	cursor: pointer;
 }
+section.modal-wrap {
+	display: none;	
+	margin: 0 auto;
+}
+section.modal-wrap.active {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 1280px;
+	height: 800px;
+	background-image: url(/images/bg.jpg);
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	        justify-content: center;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	        align-items: center;
+	
+	z-index: 1;
+}
+section.modal-wrap.active div.blur {
+	height: 370px;
+}
+section.modal-wrap.active div.content {
+	height: 370px;
+	z-index: 2;	
+	display: -webkit-box;	
+	display: -webkit-flex;	
+	display: -ms-flexbox;	
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+section.modal-wrap.active div.content img {
+	height: 154px;
+	width: 150px;
+}
+
