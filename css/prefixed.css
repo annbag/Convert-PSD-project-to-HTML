@@ -133,28 +133,23 @@ form input {
 	margin: 15px 0 20px;
 	border: none;
 }
-
-form input.tooltip {
-	position: relative;
-  display: inline-block;
-  border: none;
+#infoName, #infoMail, #infoCountry, #infoApproval {
+	display: none;	
 }
-form input.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+#infoName.active, #infoMail.active, #infoCountry.active, #infoApproval.active {
+	display: block;
+	background-color: #ec5252;
+  border-radius: 6px;
+  padding: 5px;
+  margin-top: -18px;
+  margin-left: 20%;
+  font-size: 12px;
+  width: 60%;
+  text-align: center;
+}
+#infoApproval.active {
+	padding: 2px;
+	margin-top: -5px;
 }
 form div.approval {
 	display: -ms-flexbox;
