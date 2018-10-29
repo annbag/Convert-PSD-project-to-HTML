@@ -22,9 +22,11 @@
 					<p>Wyszukujemy szlaki w Polsce, Europie oraz Stanach Zjednoczonych, w naszej bazie mamy ponad <span> 3000 szlaków</span> o łącznej długości<span> 43021km</span></p>	
 				</div>
 				<form name="myForm">
-			    <input id="name" name="userName" type="text" placeholder="imię i nazwisko" required>
-			    <input type="email" name="email" placeholder="email" required>
-			    <input type="text" name="country" list="country" placeholder="kraj pochodzenia" required>
+			    <input id="name" name="userName" type="text" placeholder="imię i nazwisko">
+			    <p id="infoName"></p>
+			    <input type="email" name="email" placeholder="email">
+			    <p id="infoMail"></p>
+			    <input type="text" name="country" list="country" placeholder="kraj pochodzenia">
 						<datalist id="country">
 		          <option value="Polska">Polska</option>
 		          <option value="Albania">Albania</option>
@@ -33,11 +35,13 @@
 		          <option value="Angola">Angola</option>
 		          <option value="Antigua i Barbuda">Antigua i Barbuda</option>
 	        	</datalist>
+	        	<p id="infoCountry"></p>
 		        <div class="approval">
-	        		<input type="checkbox" id="checkbox" required>
+	        		<input type="checkbox" id="checkbox">
 							<p>Wyrażam zgodę na przetwarzanie podanych przeze mnie danych osobowych</p>
 						</div>
-	        <input id="register-btn" type="submit" value="zarejestruj się">
+						<p id="infoApproval"></p>
+	        <input id="register-btn" type="button" value="zarejestruj się">
 				</form>
 			</div>		
 		</div>
