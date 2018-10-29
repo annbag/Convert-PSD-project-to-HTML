@@ -10,18 +10,19 @@ function validateForm() {
 	const approval = document.getElementById('checkbox').checked;
 
 	if (userName === '') {
-		document.getElementById('infoName').innerHTML = 'You should write name and surmane.';
+		document.getElementById('infoName').innerHTML = 'Wpisz imię i nazwisko.';
 	} else if (userName == 'Jan Kowalski') {
-		document.getElementById('infoName').innerHTML = 'User already exists';
+		document.getElementById('infoName').innerHTML = 'Użytkowanik już istnieje.';
 	} else if (email === '') {
-		document.getElementById('infoMail').innerHTML = 'You should write e-mail.';
+		document.getElementById('infoMail').innerHTML = 'Wpisz e-maila.';
 	} else if (country === '') {
-		document.getElementById('infoCountry').innerHTML = 'You should choose country.';
+		document.getElementById('infoCountry').innerHTML = 'Wybierz kraj.';
 	} else if (approval == false) {
-		document.getElementById('infoApproval').innerHTML = 'You should agree.';
-	} else 
+		document.getElementById('infoApproval').innerHTML = 'Trzeba wyrazić zgodę.';
+	} else {
 		document.querySelector('.modal-wrap').classList.add('active');
 		document.querySelector('.mainView').classList.add('hidden');		
+	}
 }
 
 registerBtn.addEventListener('click', validateForm );
