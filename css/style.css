@@ -128,22 +128,6 @@ form input.tooltip .tooltiptext {
     opacity: 0;
     transition: opacity 0.3s;
 }
-
-form input.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-form input.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
 form div.approval {
 	display: -ms-flexbox;
 	display: flex;

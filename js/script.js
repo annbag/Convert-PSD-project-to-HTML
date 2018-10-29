@@ -3,15 +3,15 @@ const letsGo = document.getElementById('letsGo');
 
 
 
-registerBtn.addEventListener('click', function() {
-	let x = document.forms['myForm']['country'].value;
-	let y = document.getElementById('checkbox').checked;
 
-	if (x !== "") {
-		if (y == true) {
-			document.querySelector('.modal-wrap').classList.add('active');
-			document.querySelector('.mainView').classList.add('hidden');
-		}	
+
+registerBtn.addEventListener('click', function() {
+	let country = document.forms['myForm']['country'].value;
+	let approval = document.getElementById('checkbox').checked;
+
+	if (country !== "" && approval == true) {
+		document.querySelector('.modal-wrap').classList.add('active');
+		document.querySelector('.mainView').classList.add('hidden');		
 	}
 })
 

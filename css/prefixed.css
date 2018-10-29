@@ -12,7 +12,7 @@ body {
 section.mainView {
 	max-width: 1280px;
 	height: 800px;
-	background-image: url(/images/bg.jpg);
+	background-image: url(../images/bg.jpg);
 	background-position: center;
 	display: -ms-flexbox;
 	display: -webkit-box;
@@ -35,7 +35,7 @@ div.blur {
 	position: absolute;
 	width: 820px;
 	height: 510px;
-	background-image: url(/images/bg.jpg);
+	background-image: url(../images/bg.jpg);
 	-webkit-filter: blur(3px);
 	        filter: blur(3px);
 	background-position: center;
@@ -156,22 +156,6 @@ form input.tooltip .tooltiptext {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
-
-form input.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-form input.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
 form div.approval {
 	display: -ms-flexbox;
 	display: -webkit-box;
@@ -213,7 +197,7 @@ input#register-btn, input#letsGo {
 section.modal-wrap {
 	display: none;	
 	margin: 0 auto;
-	background-image: url(/images/bg.jpg);
+	background-image: url(../images/bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 }
