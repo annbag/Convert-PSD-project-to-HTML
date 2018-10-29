@@ -312,3 +312,29 @@ section.modal-wrap.active div.content img {
 		width: 150px;
 	}
 }
+@media (max-width: 540px) {
+	div.content h1 {
+		font-size: 22px;
+	}
+	div.text {
+		padding: 10px;
+	}
+	div.text p {
+		padding-top: 15px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	div.text p ~ p {
+		padding-top: 15px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	form input {
+		height: 30px;
+		font-size: 12px;
+		line-height: 20px;
+		padding-left: 10px;
+		margin: 10px 0;
+		border: none;
+	}
+}
