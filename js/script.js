@@ -19,11 +19,9 @@ function validateForm() {
 		document.getElementById('infoCountry').innerHTML = 'You should choose country.';
 	} else if (approval == false) {
 		document.getElementById('infoApproval').innerHTML = 'You should agree.';
-	} 
-	// else 
-
-	// 	document.querySelector('.modal-wrap').classList.add('active');
-	// 	document.querySelector('.mainView').classList.add('hidden');		
+	} else 
+		document.querySelector('.modal-wrap').classList.add('active');
+		document.querySelector('.mainView').classList.add('hidden');		
 }
 
 registerBtn.addEventListener('click', validateForm );
